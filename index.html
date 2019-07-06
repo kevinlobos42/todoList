@@ -16,10 +16,23 @@
       </h1>
       <div class="add-item">
         <input type="text" id="item-text" />
-        <a href="#" id="add-btn" class="btn" onclick="addItem()">Add Item</a>
+        <a href="#" id="add-btn" class="btn">Add Item</a>
       </div>
-      <div class="item-List" id="item-list"></div>
+      <!-- <div class="item-List" id="item-list"></div> -->
+      <div class="scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Check Off</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="task-list" style="overflow: auto;"></tbody>
+        </table>
+      </div>
     </div>
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/app.js"></script>
   </body>
 </html>
