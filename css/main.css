@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Kalam:300|Lato:300i&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.accent {
+  color: #00eaff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background: #5281a8;
+  font-family: "Lato", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.container .add-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 320px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .add-item input {
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem 1rem;
+  padding-right: 0.5rem;
+  font-size: 1.3rem;
+  font-family: "Lato", sans-serif;
+}
+
+.container .add-item a {
+  padding: 0.69rem 1rem;
+  background: white;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  border-radius: 5px;
+}
+
+.container .add-item a:hover {
+  background: #00eaff;
+}
+
+.container .item-List {
+  background: white;
+  max-height: 525px;
+  margin-top: 1rem;
+  overflow: auto;
+}
+
+.container .item-List > div {
+  border-bottom: #ccc solid 2px;
+}
+
+.container .item-List div {
+  margin: 0.75rem 0;
+  margin-bottom: 0;
+  padding: 0 1rem;
+  padding-bottom: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .item-List div h1 {
+  display: inline-block;
+  margin: 0;
+  font-family: "Kalam", cursive;
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: left;
+}
+
+.container .item-List div .status {
+  width: 20%;
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+.container .item-List div .status i {
+  cursor: pointer;
+}
+
+.container .item-List div .status i:first-child:hover {
+  color: green;
+}
+
+.container .item-List div .status i:last-child:hover {
+  color: red;
+}
+/*# sourceMappingURL=main.css.map */
