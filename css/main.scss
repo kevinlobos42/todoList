@@ -60,6 +60,7 @@ body {
     overflow: auto;
     > div {
       border-bottom: #ccc solid 2px;
+      height: 100%;
     }
     div {
       margin: 0.75rem 0;
@@ -69,6 +70,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      overflow: hidden;
       h1 {
         display: inline-block;
         margin: 0;
@@ -78,16 +80,40 @@ body {
         text-align: left;
       }
       .status {
-        width: 20%;
+        width: 40%;
+        padding: 0;
+        height: 53px;
+        margin: 0;
         font-size: 1.3rem;
+        justify-content: space-evenly;
         color: #ccc;
         i {
           cursor: pointer;
+          position: relative;
           &:first-child:hover {
             color: green;
+            .desc {
+              display: block;
+            }
           }
           &:last-child:hover {
             color: red;
+            .desc {
+              display: block;
+            }
+          }
+          & .desc {
+            bottom: -250%;
+            left: 50%;
+            width: 60px;
+            font-family: $main-font;
+            transform: translateX(-50%);
+            position: absolute;
+            z-index: 2;
+            text-align: center;
+            height: 50px;
+            font-size: 0.8rem;
+            display: none;
           }
         }
       }

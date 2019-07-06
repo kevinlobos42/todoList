@@ -16,10 +16,19 @@ function addItem() {
   check = document.createElement("i");
   check.classList.add("far");
   check.classList.add("fa-check-circle");
+  let checkDesc = document.createElement("p");
+  checkDesc.classList.add("desc");
+  checkDesc.appendChild(document.createTextNode("Check off"));
+  check.appendChild(checkDesc);
 
   var remove = document.createElement("i");
   remove.classList.add("far");
   remove.classList.add("fa-times-circle");
+  let removeDesc = document.createElement("p");
+  removeDesc.classList.add("desc");
+  removeDesc.appendChild(document.createTextNode("Remove"));
+  remove.appendChild(removeDesc);
+
   status.appendChild(check);
   status.appendChild(remove);
 

@@ -76,6 +76,7 @@ body {
 
 .container .item-List > div {
   border-bottom: #ccc solid 2px;
+  height: 100%;
 }
 
 .container .item-List div {
@@ -92,6 +93,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
 }
 
 .container .item-List div h1 {
@@ -104,20 +106,50 @@ body {
 }
 
 .container .item-List div .status {
-  width: 20%;
+  width: 40%;
+  padding: 0;
+  height: 53px;
+  margin: 0;
   font-size: 1.3rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: #ccc;
 }
 
 .container .item-List div .status i {
   cursor: pointer;
+  position: relative;
 }
 
 .container .item-List div .status i:first-child:hover {
   color: green;
 }
 
+.container .item-List div .status i:first-child:hover .desc {
+  display: block;
+}
+
 .container .item-List div .status i:last-child:hover {
   color: red;
+}
+
+.container .item-List div .status i:last-child:hover .desc {
+  display: block;
+}
+
+.container .item-List div .status i .desc {
+  bottom: -250%;
+  left: 50%;
+  width: 60px;
+  font-family: "Lato", sans-serif;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  height: 50px;
+  font-size: 0.8rem;
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
