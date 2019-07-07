@@ -1,0 +1,38 @@
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 70vw;
+}
+
+@media (max-width: 414px) {
+  .container {
+    width: 80vw;
+  }
+  .container .add-item input {
+    width: 60%;
+  }
+  .container .add-item a {
+    width: 30%;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    width: 80vw;
+  }
+  .container .add-item input {
+    width: 55%;
+  }
+  .container .add-item a {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */
